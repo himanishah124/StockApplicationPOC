@@ -1,4 +1,11 @@
-﻿using System;
+﻿///-----------------------------------------------------------------
+///   Namespace:      StockApplication
+///   Class:          Stock
+///   Description:    Holds the minimum and maximum value for the stock and also the list of price change along with the timestamp.
+///   Author:         Himani Shah                    Date: 07/12/2019
+///-----------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

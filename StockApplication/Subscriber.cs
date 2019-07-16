@@ -1,3 +1,9 @@
+///-----------------------------------------------------------------
+///   Namespace:      StockApplication
+///   Class:          Subscriber
+///   Description:    Subscribes to the  publisher class to get the stock price and defines the event handler
+///   Author:         Himani Shah                    Date: 07/12/2019
+///-----------------------------------------------------------------
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +28,9 @@ namespace StockApplication
             Console.Write("StockPrice  : ");
         }
 
-        public int StockPrice()
+        public int GetStockPrice()
         {
-            return _publisher.Stock();
+            return _publisher.GetStockPrice();
         }
 
     }

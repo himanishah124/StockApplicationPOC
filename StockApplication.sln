@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApplication", "StockApplication\StockApplication.csproj", "{7D44BD17-1C60-41F3-BD1E-1012F9A7ADAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApplicationService", "ClassLibrary1\StockApplicationService.csproj", "{D4F2B677-1860-4EC8-9AC0-2E29A2AE536B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApplicationService", "StockApplicationService\StockApplicationService.csproj", "{D4F2B677-1860-4EC8-9AC0-2E29A2AE536B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,11 @@
-﻿using System;
+﻿///-----------------------------------------------------------------
+///   Namespace:      StockApplicationService
+///   Class:          Publisher
+///   Description:    Generates the stock value within the specified limits
+///   Author:         Himani Shah                    Date: 07/12/2019
+///-----------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +28,11 @@ namespace StockApplicationService
             this._max = _max;
         }
 
-        public int Stock()
+        /// <summary>
+        /// Generates the price within the given limits
+        /// </summary>
+        /// <returns>stock price</returns>
+        public int GetStockPrice()
         {
             if (eventObj != null)
                 eventObj();

@@ -52,7 +52,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\StockApplicationService.csproj">
+    <ProjectReference Include="..\StockApplicationService\StockApplicationService.csproj">
       <Project>{d4f2b677-1860-4ec8-9ac0-2e29a2ae536b}</Project>
       <Name>StockApplicationService</Name>
     </ProjectReference>

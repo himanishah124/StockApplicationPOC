@@ -1,5 +1,5 @@
-C:\Users\user\source\repos\StockApplication\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\user\source\repos\StockApplication\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\user\source\repos\StockApplication\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\user\source\repos\StockApplication\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
-C:\Users\user\source\repos\StockApplication\ClassLibrary1\obj\Debug\StockApplicationService.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\StockApplication\StockApplicationService\bin\Debug\StockApplicationService.dll
+C:\Users\user\source\repos\StockApplication\StockApplicationService\bin\Debug\StockApplicationService.pdb
+C:\Users\user\source\repos\StockApplication\StockApplicationService\obj\Debug\StockApplicationService.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\StockApplication\StockApplicationService\obj\Debug\StockApplicationService.dll
+C:\Users\user\source\repos\StockApplication\StockApplicationService\obj\Debug\StockApplicationService.pdb

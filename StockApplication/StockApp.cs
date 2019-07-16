@@ -1,4 +1,11 @@
-﻿using System;
+﻿///-----------------------------------------------------------------
+///   Namespace:      StockApplication
+///   Class:          StockApp
+///   Description:    Main class that receives updates on the stock price
+///   Author:         Himani Shah                    Date: 07/12/2019
+///-----------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,30 +18,35 @@ namespace StockApplication
     {
         static void Main(string[] args)
         {
-            int i=0;
+            int stockNumber=0;
             bool success = false;
             string again="";
             Console.WriteLine("Welcome to Stock App");
             do
             {
-                Console.WriteLine("Press 1 for Stock1 \n Press 2 for Stock2 \n Press 3 for Exit ");
-                success = Int32.TryParse(Console.ReadLine(), out i);
-                if (success && (i == 1 || i == 2))
+                //Subscribe to a stock to see price change along with timestamp
+                Console.WriteLine("Press 1 for Stock1 \nPress 2 for Stock2 \nPress 3 for Exit ");
+                success = Int32.TryParse(Console.ReadLine(), out stockNumber);
+
+                //Set the limits for the stock 
+                if (success && (stockNumber == 1 || stockNumber == 2))
                 {
-                    Stock _stock1 = new Stock();
-                    if (i == 1)
+                    Stock stock = new Stock();
+                    if (stockNumber == 1)
                     {
-                        _stock1.Min = 240;
-                        _stock1.Max = 270;
+                        stock.Min = 240;
+                        stock.Max = 270;
                     }
                     else
                     {
-                        _stock1.Min = 180;
-                        _stock1.Max = 210;
+                        stock.Min = 180;
+                        stock.Max = 210;
                     }
-                    GetStockPrice(_stock1);
+
+                    GetStockPrice(stock);
+                    GetStockUpdateList(stock);
                 }
-                else if (i == 3)
+                else if (stockNumber == 3)
                 {
                     break;
                 }
@@ -49,23 +61,35 @@ namespace StockApplication
             while (again.ToUpper()=="Y");
         }
 
+        /// <summary>
+        /// Get the price change of subscribed stock 
+        /// </summary>
+        /// <param name="_stock"></param>
         public static void GetStockPrice(Stock _stock)
         {
             _stock.StockDataList = new List<StockData>();
             Console.WriteLine("Press Esc to Stop");
-            //while()
             while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape))
             {
                 Subscriber _subscriber = new Subscriber(_stock);
-                int price=_subscriber.StockPrice() ;
+                int price=_subscriber.GetStockPrice() ;
                 _stock.StockDataList.Add(new StockData { StockTime = DateTime.Now, StockPrice = price });
                 Console.WriteLine(price);
                 Thread.Sleep(1000);
             }
+            
+        }
+
+        /// <summary>
+        /// Publish the list of price change along with timestamp for the subscribed stock
+        /// </summary>
+        /// <param name="_stock"></param>
+        public static void GetStockUpdateList(Stock _stock)
+        {
             Console.WriteLine("The list of price change for the subscribed Stock");
             foreach (StockData _stockData in _stock.StockDataList)
             {
-                Console.WriteLine("Time : " +_stockData.StockTime + " || Price : " + _stockData.StockPrice);
+                Console.WriteLine("Time : " + _stockData.StockTime + " || Price : " + _stockData.StockPrice);
             }
         }
 

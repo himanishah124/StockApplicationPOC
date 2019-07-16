@@ -1,4 +1,10 @@
-﻿using System;
+﻿///-----------------------------------------------------------------
+///   Namespace:      StockApplication
+///   Class:          StockData
+///   Description:    Holds the price for the stock along with timestamp.
+///   Author:         Himani Shah                    Date: 07/12/2019
+///-----------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

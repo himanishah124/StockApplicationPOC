@@ -1,8 +1,8 @@
 C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\StockApplication.exe.config
 C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\StockApplication.exe
 C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\StockApplication.pdb
+C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\StockApplicationService.dll
+C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\StockApplicationService.pdb
+C:\Users\user\source\repos\StockApplication\StockApplication\obj\Debug\StockApplication.csprojResolveAssemblyReference.cache
 C:\Users\user\source\repos\StockApplication\StockApplication\obj\Debug\StockApplication.exe
 C:\Users\user\source\repos\StockApplication\StockApplication\obj\Debug\StockApplication.pdb
-C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\ClassLibrary1.dll
-C:\Users\user\source\repos\StockApplication\StockApplication\bin\Debug\ClassLibrary1.pdb
-C:\Users\user\source\repos\StockApplication\StockApplication\obj\Debug\StockApplication.csprojResolveAssemblyReference.cache

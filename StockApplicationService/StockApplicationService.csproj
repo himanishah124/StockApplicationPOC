@@ -7,8 +7,8 @@
     <ProjectGuid>{D4F2B677-1860-4EC8-9AC0-2E29A2AE536B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>StockApplicationService</RootNamespace>
+    <AssemblyName>StockApplicationService</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
